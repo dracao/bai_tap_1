@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 185, 159);
+    height: 95px;
+    position: fixed;
+}
+
+/* ---------------------------- cho logo ----------------------------- */
+.logo h1 {
+    font-size: 50px;
+    color: rgb(255, 68, 0);
+    
+}
+
+.logo{
+    width: 20%;
+    padding-left: 150px;;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* ------------------------div cho đường link---------------------------- */
+
+.link {
+    width: 50%;
+    height:20px;
+    display: flex;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.link > *{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* ----------------------- chỗ này cho why love cat---------------------- */
+.why{
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+.why img{   
+    /* position: absolute;  tại sao có cái này thì nó bị out khỏi vùng class gth */
+    /* margin-top: 200px; */
+    display: none;
+    width: 180px;
+    transition: all 1s;
+}
+
+.why h3{
+    transition: all 0.5s;
+    width: 150px;
+}
+
+.gth{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-left: -40px;
+    border-radius: 10px;
+    width: 210px;     
+    position: absolute;
+    display: none;
+    transition: all 1s;
+}
+
+.why:hover .gth {
+    display: block;
+}
+
+.why:hover h3{
+    color: white;
+}
+.why:hover img{
+    display: block;
+}
+
+
+/* -------------------------Chỗ này cho solution --------------------------*/
+
+.question{  
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.board{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: white;
+    margin-left: -40px;
+    border-radius: 10px;
+    width: 170px;     
+    position: absolute;
+    display: none;
+    transition: all 1s;
+}
+
+.board button{
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 156, 119);
+    cursor: pointer;
+}
+
+.board img{
+    background-color: rgba(255, 112, 112, 0.952) ;
+    position: absolute;
+    border-radius: 10px;
+    border: solid 3px black;
+    width: 100px;
+    transition: all 1s;
+    display: none;
+
+}
+
+.food img{
+    margin-top: -40px;
+    margin-left: 130px;
+}
+
+.cat img{
+    width: 200px;
+    margin-top: -45px;
+    margin-left: 130px;
+}
+
+.thing img{
+    width: 200px;
+    margin-top: -40px;
+    margin-left: 130px;
+}
+
+/*==============chỗ hover============ */
+.question:hover .board{
+    display: block;
+
+}
+
+.question:hover h3{
+    color: white;
+}
+
+.food:hover img{
+    display: block;
+}
+
+.cat:hover img{
+    display: block;
+
+
+}
+
+.thing:hover img{
+    display: block;
+
+}
+/* --------------------------------- Community-------------------------------- */
+
+.community{    
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.community img{
+    margin-left: -25px;
+    width: 150px ;
+    transition: all 1s;
+    
+    height: 0;
+    /* opacity: 0; */
+}
+
+/* ========================= chỗ hover===================== */
+.community:hover img{
+    height: 150px;
+    
+    transition: all 1s;
+
+    /* opacity: 1; */
+}
+
+.community:hover h3{
+    color: white;
+}
+
+/* --------------------------------- Pricing ---------------------------------- */
+
+.gia h6{
+    background-color: rgba(250, 135, 107, 0.685);
+    width: 150px;
+    cursor: pointer;
+    transform: rotate(360deg);
+    font-size: 40px;
+    transition: all 1s;
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+/* ===== chỗ hover ==== */
+
+.gia:hover h3{
+    color: white;
+}
+
+.gia:hover h6{
+    display: block;
+}
+
+/* -------------------------------- cho sign in------------------------------ */
+.sign button{   
+    margin-top: 25px;
+    font-size: 25px;
+    border: 0;    
+}
+
+.button1{
+    background-color: rgb(255, 185, 159);
+    border: hidden;
+    padding-left: 40px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: rgb(255, 125, 78) ;
+    padding: 10px;
+    border: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =============== chỗ hover ============== */
+
+.button1:hover{
+    color: white;
+}
+
+.button2:hover{
+    color: white;
+}
+
+/* ---------------------- div khác bên ngoài nav (head)------------------------ */
+/* ------------------------------- phần body---------------------------------- */
+.background{
+    background-image: url(../picture/Download\ wallpaper\ 1920x1080\ cat\,\ leaves\,\ autumn\,\ nature\,\ background\,\ color\,\ bright\ hd\ background.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----------------------------Content cho background ------------------------ */
+.content { 
+    background-color: rgba(252, 191, 150, 0.76);
+    margin-left: 800px;
+    width: 500px;
+    /* height: 500px; */
+    padding: 20px;
+}
+
+.content h1{
+    color: rgb(146, 39, 0);
+    margin: 20px 0;
+    font-size: 53px;
+}
+
+.content h5{
+    display: block;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.fa-arrow-right{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.content button{ 
+    font-size: 30px;
+    margin: 20px 120px;
+    
+}
